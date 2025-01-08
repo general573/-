@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Η πιο αστεία ιστοσελίδα!</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(45deg, #ff69b4, #8a2be2, #1e90ff);
+            background-size: 300% 300%;
+            animation: gradientMove 8s infinite;
+            color: #fff;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        @keyframes gradientMove {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        header {
+            padding: 20px;
+            font-size: 2.5rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        p {
+            font-size: 1.5rem;
+            line-height: 1.8;
+            margin: 20px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            margin: 20px auto;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            color: #fff;
+            background: linear-gradient(90deg, #ff7f50, #ff4500);
+            border: none;
+            border-radius: 50px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.4s ease-in-out;
+        }
+
+        .btn:hover {
+            transform: scale(1.1);
+            background: linear-gradient(90deg, #ff4500, #ff7f50);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px auto;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .card img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 15px;
+            margin: 10px auto;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            font-size: 1rem;
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>Καλωσήρθατε στην πιο αστεία ιστοσελίδα!</header>
+
+    <div class="container">
+        <p>Εδώ, όλα είναι πιθανά! Είσαι έτοιμος να γελάσεις; 😜</p>
+        <a href="#secret" class="btn">Κάνε κλικ αν τολμάς!</a>
+
+        <div class="card">
+            <h2>Η φωτογραφία της ημέρας</h2>
+            <img src="758629d33ea230940d7cbb6955a69bfd.jpg" alt="Το πιο αστείο γατάκι">
+            <p>Είναι το γατάκι που κανείς δεν μπορεί να αγνοήσει! 🐱</p>
+        </div>
+
+        <div class="card">
+            <h2>Η αστεία αλήθεια</h2>
+            <p>Γιατί το κοτόπουλο διέσχισε το δρόμο; Για να μάθει HTML, όπως εσύ!</p>
+        </div>
+    </div>
+
+    <footer>
+        © 2025 - Η ιστοσελίδα που δεν θα ξεχάσεις ποτέ!
+    </footer>
+</body>
+</html>
